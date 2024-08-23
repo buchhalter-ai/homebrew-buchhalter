@@ -5,24 +5,24 @@
 class BuchhalterAi < Formula
   desc "Automatically sync all your incoming invoices from your suppliers."
   homepage "https://buchhalter.ai/"
-  version "0.0.1-alpha.2"
+  version "0.0.1-alpha.3"
   license "SSPL-1.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/buchhalter-ai/buchhalter-ai-cli/releases/download/v0.0.1-alpha.2/buchhalter-ai_macOS_x86_64.tar.gz"
-      sha256 "d6f77f89c2f19bba8dbb32c51dc62da1e6df063aa6307ba003896fe33ea30f65"
+      url "https://github.com/buchhalter-ai/buchhalter-ai-cli/releases/download/v0.0.1-alpha.3/buchhalter-ai_macOS_x86_64.tar.gz"
+      sha256 "0a9f827db60a495e4fb0ead6cd12a25aa8a487a92e9b3f4a74202e5f23fe713d"
 
       def install
-        bin.install "buchhalter-ai"
+        bin.install "buchhalter"
       end
     end
     on_arm do
-      url "https://github.com/buchhalter-ai/buchhalter-ai-cli/releases/download/v0.0.1-alpha.2/buchhalter-ai_macOS_arm64.tar.gz"
-      sha256 "099aa291554dc39acfe7c3bc9fa06276a44a4442f5842e342a29750cc3fce743"
+      url "https://github.com/buchhalter-ai/buchhalter-ai-cli/releases/download/v0.0.1-alpha.3/buchhalter-ai_macOS_arm64.tar.gz"
+      sha256 "56497cf41748fa1b53437f78c66a22199795299eb7e3c81bc97e301e3a6e606d"
 
       def install
-        bin.install "buchhalter-ai"
+        bin.install "buchhalter"
       end
     end
   end
@@ -30,21 +30,21 @@ class BuchhalterAi < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/buchhalter-ai/buchhalter-ai-cli/releases/download/v0.0.1-alpha.2/buchhalter-ai_Linux_x86_64.tar.gz"
-        sha256 "e62a1dce7d12cae1c37fc3e2cfa39293b25fe8f2b6ef7ebc29d9844475695a8e"
+        url "https://github.com/buchhalter-ai/buchhalter-ai-cli/releases/download/v0.0.1-alpha.3/buchhalter-ai_Linux_x86_64.tar.gz"
+        sha256 "d11ccba37f5c4dd427583358f5d816e297bcd8f625e35702439646d185f4f282"
 
         def install
-          bin.install "buchhalter-ai"
+          bin.install "buchhalter"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/buchhalter-ai/buchhalter-ai-cli/releases/download/v0.0.1-alpha.2/buchhalter-ai_Linux_arm64.tar.gz"
-        sha256 "494f2e7211d3c7b31ef1fd3b96f382f00aeadf39fe819be587f083c31f976715"
+        url "https://github.com/buchhalter-ai/buchhalter-ai-cli/releases/download/v0.0.1-alpha.3/buchhalter-ai_Linux_arm64.tar.gz"
+        sha256 "0846566cc8ed1bbdfba1b2427486c910a37a408ed5ab94b02727452bc3106681"
 
         def install
-          bin.install "buchhalter-ai"
+          bin.install "buchhalter"
         end
       end
     end
